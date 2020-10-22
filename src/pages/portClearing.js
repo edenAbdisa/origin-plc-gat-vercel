@@ -6,11 +6,11 @@ import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
 import re from "../images/re.jpg"
-export default function CustomClearing() {
-  return (
-    <Layout>
-      <SEO title="Custom Clearing" />
-      <Container
+export default function portClearing() {
+	return (
+              <Layout>
+              <SEO title="Cargo Handling"/>
+              <Container
         style={{
           position: "relative",
           paddingRight: "10px",
@@ -31,8 +31,7 @@ export default function CustomClearing() {
             >
               SERVICES
             </p>
-            <Nav
-              defaultActiveKey="/home"
+            <Nav 
               className="flex-column"
               style={{
                 borderWidth: "1px",
@@ -43,18 +42,25 @@ export default function CustomClearing() {
               <Nav.Link
                 href="/portClearing/"
                 style={{
-                  color: "#000000",
                   fontSize: "1.2 em",
                   borderWidth: "1px",
                   borderColor: "#4c7ba917",
                   borderStyle: "groove",
+                  backgroundColor: "#ffa931",
+                   color: "#ffffff"
                 }}
               >
                 Port clearing
               </Nav.Link>
               <Nav.Link href="/customClearing/"
                 eventKey="link-1"
-                style={{ backgroundColor: "#ffa931", color: "#ffffff" }}
+                style={{
+                     fontSize: "1.2 em",
+                     borderWidth: "1px",
+                     borderColor: "#4c7ba917",
+                     borderStyle: "groove",
+                      color: "#000000"
+                   }}
               >
                 Custom Clearing
               </Nav.Link>
@@ -100,17 +106,12 @@ export default function CustomClearing() {
           <Col xs={8} md={8}>
             <img className="d-block w-100" src={re} alt="Origin Details" />
             <p style={{ paddingTop: "20px" }}>
-              We do customs clearing operations in all customs branches of
-              Ethiopia for both import & export and tax free & tax paid cargoes.
-              The main customs offices that we did most of our customs clearing
-              works are Addis Ababa airport customs branch office, Addis Ababa
-              Kality customs office, Adama, Modjo, Dire Dawa, Kombolcha, Mekele
-              and Mile customs offices. This makes us familiar with the working
-              culture, rules & regulations of the different customs branches.
-            </p>
+            We do port clearing work at Djibouti port. We have office in Djibouti which follows the work of the Djibouti Transit Company, Djibouti port and shipping agents. We build good relationship with all these stakeholders in Djibouti. This gives us capacity to clear cargoes within a shortest possible time. We have also partner in Djibouti free zone which can give us a free zone services for our client. This makes our service in Djibouti full-fledged.  So far we cleared a huge amount of project, factory raw materials and machineries and trade cargoes of both containerized, RORO & break bulk.       </p>
           </Col>
         </Row>
       </Container>
-    </Layout>
-  )
+  
+              </Layout>
+
+		)
 }

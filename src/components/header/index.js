@@ -11,7 +11,6 @@ import "../../assets/css/flaticon.css"
 import "../../assets/css/jquery.timepicker.css"
 import "../../assets/css/magnific-popup.css"
 import logo2 from "../../images/logo2.jpg"
-
 import { Link } from "gatsby"
 const Header = () => {
   return (
@@ -142,9 +141,9 @@ const Header = () => {
           >
             <ul className="navbar-nav m-auto">
               <li className="nav-item active">
-                <a href="/" className="nav-link" style={{color:"#ffffff"}}>
+                <Link to="/" className="nav-link" style={{color:"#ffffff"}}>
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <Link to="/about/" className="nav-link" style={{color:"#ffffff"}}>
@@ -155,19 +154,19 @@ const Header = () => {
                 <NavDropdown title={
         <span style={{color:"#ffffff"}}>Service</span>
     } >
-                  <NavDropdown.Item href="customClearing">
+                  <NavDropdown.Item href="/customClearing/">
                     Custom Clearing
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="cargoHandling">
+                  <NavDropdown.Item href="/portClearing/">
                     Port Clearing
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="portHandling">
+                  <NavDropdown.Item href="/importingEquipments/">
                     Importing equipments
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="transportation">
+                  <NavDropdown.Item href="/transportation/">
                     Transportation
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="otherService">
+                  <NavDropdown.Item href="/consultationAndFacilitation/">
                     Consultation and facilitation
                   </NavDropdown.Item>
                 </NavDropdown>

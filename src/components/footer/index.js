@@ -54,8 +54,8 @@ export const Footer = () => {
                 </h2>
                 <ul className="list-unstyled">
                   <li>
-                    <a
-                      href="/"
+                    <Link
+                      to="/"
                       style={{
                         color: "#868482",
                         fontSize: "16px",
@@ -74,11 +74,10 @@ export const Footer = () => {
                         />
                       </span>
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="about"
+                    <Link to="/about/"
                       style={{
                         color: "#868482",
                         fontSize: "16px",
@@ -97,11 +96,10 @@ export const Footer = () => {
                         />
                       </span>
                       About
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="gallery"
+                    <Link to="/gallery/"
                       style={{
                         color: "#868482",
                         fontSize: "16px",
@@ -120,11 +118,10 @@ export const Footer = () => {
                         />
                       </span>
                       Gallery
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="customers"
+                    <Link to="/customers/"
                       style={{
                         color: "#868482",
                         fontSize: "16px",
@@ -143,11 +140,10 @@ export const Footer = () => {
                         />
                       </span>
                       Customer
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="contact"
+                    <Link to="/contact/"
                       style={{
                         color: "#868482",
                         fontSize: "16px",
@@ -166,7 +162,7 @@ export const Footer = () => {
                         />
                       </span>
                       Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -189,8 +185,8 @@ export const Footer = () => {
                 </h2>
                 <ul className="list-unstyled">
                   <li>
-                    <a
-                      href="customClearing"
+                    <Link
+                      to="/customClearing/"
                       style={{
                         color: "#868482",
                         fontSize: "16px",
@@ -199,11 +195,11 @@ export const Footer = () => {
                       }}
                     >
                       Custom Clearing
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="cargoHandling"
+                    <Link
+                      to="/portClearing/"
                       style={{
                         color: "#868482",
                         fontSize: "16px",
@@ -212,11 +208,11 @@ export const Footer = () => {
                       }}
                     >
                       Cargo Handling
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="portHandling"
+                    <Link
+                      to="/importingEquipments/"
                       style={{
                         color: "#868482",
                         fontSize: "16px",
@@ -225,10 +221,10 @@ export const Footer = () => {
                       }}
                     >
                       Port Handling
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="transportation"
                       style={{
                         color: "#868482",
@@ -238,11 +234,11 @@ export const Footer = () => {
                       }}
                     >
                       Transportaion
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="otherService"
+                    <Link
+                      to="/consultationAndFacilitation/"
                       style={{
                         color: "#868482",
                         fontSize: "16px",
@@ -251,7 +247,7 @@ export const Footer = () => {
                       }}
                     >
                       Other Services
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

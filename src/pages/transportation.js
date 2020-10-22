@@ -41,7 +41,7 @@ export default function Transportation() {
               }}
             >
               <Nav.Link
-                href="/"
+                href="/portClearing/"
                 style={{
                   color: "#000000",
                   fontSize: "1.2 em",
@@ -52,7 +52,7 @@ export default function Transportation() {
               >
                 Port clearing
               </Nav.Link>
-              <Nav.Link
+              <Nav.Link href="/customClearing/"
                 eventKey="link-1"
                 style={{
                      fontSize: "1.2 em",
@@ -63,7 +63,7 @@ export default function Transportation() {
                    }}  >
                 Custom Clearing
               </Nav.Link>
-              <Nav.Link
+              <Nav.Link href="/transportation/"
                 eventKey="link-2"
                 style={{
                   color: "#000000",
@@ -77,7 +77,7 @@ export default function Transportation() {
               >
                 Transportation
               </Nav.Link>
-              <Nav.Link
+              <Nav.Link href="/consultationAndFacilitation/"
                 eventKey="link-2"
                 style={{
                      fontSize: "1.2 em",
@@ -89,7 +89,7 @@ export default function Transportation() {
               >
                 Consultation and facilitation
               </Nav.Link>
-              <Nav.Link
+              <Nav.Link href="/importingEquipments/"
                 eventKey="link-2"
                 style={{
                   color: "#000000",

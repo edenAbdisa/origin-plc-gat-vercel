@@ -24,7 +24,7 @@ export default function Header(){
 							<a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
 							<ul className="dropdown-menu" >
 		                     <li>
-		                          <a  href="cargoHandling" >
+		                          <a  href="portClearing" >
 		                            Port Clearing
 		                          </a>
 		                     </li>
@@ -39,12 +39,12 @@ export default function Header(){
 		                          </a>
 		                      </li>
 		                      <li>
-		                          <a href="portHandling">
+		                          <a href="importingEquipments">
 								  Importation of industrial and construction machineries, equipment and spare parts
 		                          </a>
 		                      </li>
 		                      <li>
-		                          <a  href="otherService" >
+		                          <a  href="consultationAndFacilitation" >
 		                            Consultation and facilitation
 		                          </a>
 		                      </li>
@@ -71,9 +71,9 @@ export default function Header(){
 		  <Nav.Link href="about">About</Nav.Link>
 		  <NavDropdown title="Service" id="basic-nav-dropdown">
 			<NavDropdown.Item href="customClearing">Custom Clearing</NavDropdown.Item>
-			<NavDropdown.Item href="cargoHandling">Cargo Handling</NavDropdown.Item>
-			<NavDropdown.Item href="otherService">Other Service</NavDropdown.Item>
-			<NavDropdown.Item href="portHandling">Port Handling</NavDropdown.Item>
+			<NavDropdown.Item href="portClearing">Cargo Handling</NavDropdown.Item>
+			<NavDropdown.Item href="consultationAndFacilitation">Other Service</NavDropdown.Item>
+			<NavDropdown.Item href="importingEquipments">Port Handling</NavDropdown.Item>
 			<NavDropdown.Item href="transportation">Transportation</NavDropdown.Item>
 			<NavDropdown.Divider />
 			<NavDropdown.Item href="gallery">Gallery</NavDropdown.Item>
