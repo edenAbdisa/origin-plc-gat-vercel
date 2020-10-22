@@ -6,7 +6,8 @@ import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
 import re from "../images/re.jpg"
-export default function PortHandling() {
+import { Link } from "gatsby"
+export default function ImportingEquipments() {
 	return (
               <Layout>
               <SEO title="Port Handline"/>

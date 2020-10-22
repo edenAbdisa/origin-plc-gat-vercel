@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
 import re from "../images/re.jpg"
+import { Link } from "gatsby"
 export default function Transportation() {
 	return (
               <Layout>
