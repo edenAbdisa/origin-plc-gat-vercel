@@ -207,7 +207,7 @@ export const Footer = () => {
                         lineHeight: "24px",
                       }}
                     >
-                      Cargo Handling
+                      Port Clearing
                     </Link>
                   </li>
                   <li>
@@ -220,12 +220,12 @@ export const Footer = () => {
                         lineHeight: "24px",
                       }}
                     >
-                      Port Handling
+                      Importing Equipments
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="transportation"
+                      href="/transportation/"
                       style={{
                         color: "#868482",
                         fontSize: "16px",
