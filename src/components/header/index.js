@@ -12,6 +12,15 @@ import "../../assets/css/jquery.timepicker.css"
 import "../../assets/css/magnific-popup.css"
 import logo2 from "../../images/logo2.jpg"
 
+import gallery from "../../pages/gallery.js"
+import about from "../../pages/about.js"
+import contact from "../../pages/contact.js"
+import customers from "../../pages/customers.js"
+import customClearing from "../../pages/customClearing.js"
+import cargoHandling from "../../pages/cargoHandling.js"
+import otherService from "../../pages/otherService.js"
+import portHandling from "../../pages/portHandling.js"
+import transportation from "../../pages/transportation.js"
 const Header = () => {
   return (
     <HeaderContainer>
@@ -146,7 +155,7 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a href="about" className="nav-link" style={{color:"#ffffff"}}>
+                <a href={about} className="nav-link" style={{color:"#ffffff"}}>
                   About
                 </a>
               </li>
@@ -172,17 +181,17 @@ const Header = () => {
                 </NavDropdown>
               </li>
               <li className="nav-item">
-                <a href="gallery" className="nav-link" style={{color:"#ffffff"}}>
+                <a href={gallery} className="nav-link" style={{color:"#ffffff"}}>
                   Gallery
                 </a>
               </li>
               <li className="nav-item">
-                <a href="customers" className="nav-link" style={{color:"#ffffff"}}>
+                <a href={customers} className="nav-link" style={{color:"#ffffff"}}>
                   Customers
                 </a>
               </li>
               <li className="nav-item">
-                <a href="contact" className="nav-link" style={{color:"#ffffff"}}>
+                <a href={contact} className="nav-link" style={{color:"#ffffff"}}>
                   Contact
                 </a>
               </li>
