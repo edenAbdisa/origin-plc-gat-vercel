@@ -5,6 +5,7 @@ import startbullet from "../../assets/icon/star-outline.svg"
 import mobile from "../../assets/icon/phone-portrait-outline.svg"
 import call from "../../assets/icon/call-outline.svg"
 import mail from "../../assets/icon/mail-outline.svg"
+import { Link } from "gatsby"
 export const Footer = () => {
   return (
     <FooterContainer>

@@ -11,6 +11,7 @@ import "../../assets/css/flaticon.css"
 import "../../assets/css/jquery.timepicker.css"
 import "../../assets/css/magnific-popup.css"
 import logo2 from "../../images/logo2.jpg"
+import call from "../../assets/icon/call-outline.svg"
 import { Link } from "gatsby"
 const Header = () => {
   return (
@@ -43,7 +44,7 @@ const Header = () => {
               <div className="icon d-flex justify-content-center align-items-center">
                 <span className="fa fa-map">
                   <img
-                    src={location}
+                    src={call}
                     style={{ height: "40px", width: "40px", color: "#ffa931" }}
                   />
                 </span>
@@ -154,21 +155,21 @@ const Header = () => {
                 <NavDropdown title={
         <span style={{color:"#ffffff"}}>Service</span>
     } >
-                  <NavDropdown.Item href="/customClearing/">
-                    
-                    Custom Clearing
+                  <NavDropdown.Item >
+                    <Link to="/customClearing/">
+                    Custom Clearing </Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/portClearing/">
-                    Port Clearing
+                  <NavDropdown.Item >
+                   <Link to="/portClearing/">Port Clearing</Link> 
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/importingEquipments/">
-                    Importing equipments
+                  <NavDropdown.Item >
+                  <Link to="/importingEquipments/">Importing equipments</Link> 
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/transportation/">
-                    Transportation
+                  <NavDropdown.Item>
+                  <Link  to="/transportation/">Transportation</Link> 
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/consultationAndFacilitation/">
-                    Consultation and facilitation
+                  <NavDropdown.Item >
+                  <Link to="/consultationAndFacilitation/">Consultation and facilitation</Link> 
                   </NavDropdown.Item>
                 </NavDropdown>
               </li>
