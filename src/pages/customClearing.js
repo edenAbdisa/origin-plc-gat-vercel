@@ -5,8 +5,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
-import re from "../images/re.jpg"
-import { Link } from "gatsby"
+import re from "../images/re.jpg" 
 export default function CustomClearing() {
   return (
     <Layout>
@@ -93,8 +92,7 @@ export default function CustomClearing() {
                   borderStyle: "groove",
                 }}
               >
-                Importation of industrial and construction machineries,
-                equipment and spare par
+                Importing goods
               </Nav.Link>
             </Nav>
           </Col>

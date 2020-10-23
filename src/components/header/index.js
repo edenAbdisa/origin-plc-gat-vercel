@@ -13,6 +13,7 @@ import "../../assets/css/magnific-popup.css"
 import logo2 from "../../images/logo2.jpg"
 import call from "../../assets/icon/call-outline.svg"
 import { Link } from "gatsby"
+import mail from "../../assets/icon/mail-outline.svg"
 const Header = () => {
   return (
     <HeaderContainer>
@@ -24,23 +25,24 @@ const Header = () => {
           <div className="row d-flex align-items-start align-items-top px-3 px-md-0">
             <div className="col-md-4 d-flex mb-2 mb-md-0">
               <a className="navbar-brand d-flex align-items-center" href="/">
-                <img src={logo2} style={{ height: "3.8rem" }} />
+                <img src={logo2} style={{ height: "4.3rem" }} />
                 <span
                   style={{
                     fontSize: "24px",
                     fontWeight: "600",
                     lineHeight: "1",
                     whiteSpace: "nowrap",
+                    color:"#1eb1e8b8"
                   }}
                 >
                   Origin Logistics PLC <br />
-                  <small style={{ color: "#ffa931" }}>
-                    Standard quality logistic
+                  <small style={{ color: "#ffa931",fontSize: "70%"}}>
+                  We strive for customer satisfaction
                   </small>
                 </span>
               </a>
             </div>
-            <div className="col-md-4 d-flex topper mb-md-0 mb-2 align-items-top">
+            <div className="col-md-3 d-flex topper mb-md-0 mb-2 align-items-top">
               <div className="icon d-flex justify-content-center align-items-center">
                 <span className="fa fa-map">
                   <img
@@ -55,8 +57,7 @@ const Header = () => {
                   style={{
                     fontSize: "13px",
                     fontWeight: "600",
-                    margin: "0em",
-                    color: "#ffa931",
+                    margin: "0em"
                   }}
                 >
                   <span>Call us</span>
@@ -76,7 +77,7 @@ const Header = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-4 d-flex topper mb-md-0 align-items-top">
+            <div className="col-md-3 d-flex topper mb-md-0 align-items-top">
               <div className="icon d-flex justify-content-center align-items-center">
                 <span className="fa fa-paper-plane">
                   <img
@@ -103,6 +104,35 @@ const Header = () => {
                 >
                   Trans Tower 7th floor Saris infront of Nifas silk paint
                   factory
+                </p>
+              </div>
+            </div>
+            <div className="col-md-2 d-flex topper mb-md-0 align-items-top">
+              <div className="icon d-flex justify-content-center align-items-center">
+                <span className="fa fa-paper-plane">
+                  <img
+                    src={mail}
+                    style={{ height: "40px", width: "40px", color: "#ffa931" }}
+                  />
+                </span>
+              </div>
+              <div className="text pl-3 pl-md-3">
+                <p
+                  className="hr"
+                  style={{ fontSize: "13px", fontWeight: "600", margin: "0em" }}
+                >
+                  <span>Email</span>
+                </p>
+                <p
+                  className="con"
+                  style={{
+                    fontSize: "12px",
+                    fontWeight: "300",
+                    lineHeight: "1.8",
+                    color: "#999999",
+                  }}
+                >
+                    gm@originlogisticsplc.com
                 </p>
               </div>
             </div>
@@ -163,7 +193,7 @@ const Header = () => {
                    <Link to="/portClearing/">Port Clearing</Link> 
                   </NavDropdown.Item>
                   <NavDropdown.Item >
-                  <Link to="/importingEquipments/">Importing equipments</Link> 
+                  <Link to="/importingEquipments/">Importing goods</Link> 
                   </NavDropdown.Item>
                   <NavDropdown.Item>
                   <Link  to="/transportation/">Transportation</Link> 

@@ -5,8 +5,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
-import re from "../images/re.jpg"
-import { Link } from "gatsby"
+import re from "../images/re.jpg" 
 export default function consultationAndFacilitation() {
 	return (
               <Layout>
@@ -99,15 +98,14 @@ export default function consultationAndFacilitation() {
                   borderStyle: "groove",
                 }}
               >
-                Importation of industrial and construction machineries,
-                equipment and spare par
+                Importing goods
               </Nav.Link>
             </Nav>
           </Col>
           <Col xs={8} md={8}>
             <img className="d-block w-100" src={re} alt="Origin Details" />
             <p style={{ paddingTop: "20px" }}>
-            we consult about the customs regulations and the different requirements to get services in different governmental and private organizations. We also assist customers to get services easily from these institutions. We facilitate client’s cases mainly in Ethiopian Customs commission, Transport authority, Ethiopian Air Lines, Ethiopian Railway Corporations, Ethiopian Investment Commission, Commercial Banks and Ethiopian Shipping and Logistics service Enterprises.
+            we consult about the customs regulations and the different requirments to get services in different governmental and private organizations. We also assist customers to get services easily from these institutions. We facilitate client’s cases mainly in Ethiopian Customs commission, Transport authority, Ethiopian Air Lines, Ethiopian Railway Corporations, Ethiopian Investment Commission, Commercial Banks and Ethiopian Shipping and Logistics service Enterprises.
               </p>
           </Col>
         </Row>

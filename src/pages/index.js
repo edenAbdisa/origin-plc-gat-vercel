@@ -29,14 +29,14 @@ const IndexPage = () => (
       dataStellarBackgroundRatio="0.5"
     >
       <Carousel interval="2000" >
-        <Carousel.Item>
+        <Carousel.Item  >
           <img
             className="d-block w-100"
             src={re}
-            alt="Origin Details"
-            style={{ height: "550px" }}
+            alt="Origin Details" 
+            
           />
-          <Carousel.Caption>
+          <Carousel.Caption style={{color:"#ffa931"}}>
             <h3>Origin Logistics PLC </h3>
             <p>To be Origin of society benefit </p>
           </Carousel.Caption>
@@ -48,10 +48,6 @@ const IndexPage = () => (
             alt="Third slide"
             style={{ height: "550px" }}
           />
-          <Carousel.Caption>
-            <h3>Equipments</h3>
-            <p>Some of our equipments on field</p>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -60,10 +56,6 @@ const IndexPage = () => (
             alt="Third slide"
             style={{ height: "550px" }}
           />
-          <Carousel.Caption>
-            <h3>Equipments</h3>
-            <p>Some of our equipments on field</p>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -72,10 +64,6 @@ const IndexPage = () => (
             alt="trackloaded"
             style={{ height: "550px" }}
           />
-          <Carousel.Caption>
-            <h3>Loaded Track</h3>
-            <p>Some of our equipments on field</p>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -84,10 +72,6 @@ const IndexPage = () => (
             alt="trackloaded2"
             style={{ height: "550px" }}
           />
-          <Carousel.Caption>
-            <h3>Loaded Track</h3>
-            <p>Some of our equipments on field</p>
-          </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
     </section>
@@ -96,7 +80,7 @@ const IndexPage = () => (
         className="row d-flex"
         style={{ padding: "50px", paddingRight: "0px", paddingLeft: "150px" }}
       >
-        <div className="col-md py-5" style={{ height: "550px" }}>
+        <div className="col-md " style={{ height: "350px" }}>
           <Card style={{ width: "18rem", boxShadow: "6px 8px 12px #805416" }}>
             <ListGroup className="list-group-flush">
               <ListGroupItem
@@ -106,7 +90,7 @@ const IndexPage = () => (
               </ListGroupItem>
             </ListGroup>
 
-            <Card.Img variant="top" src={bondex} style={{ height: "300px" }} />
+            <Card.Img variant="top" src={bondex} style={{ height: "170px" }} />
             <Card.Body>
               <Card.Text>
                 Bondex project Logistics Co. Ltd <br />
@@ -123,7 +107,7 @@ const IndexPage = () => (
             </Card.Body>
           </Card>
         </div>
-        <div className="col-md py-5" style={{ height: "550px" }}>
+        <div className="col-md " style={{ height: "350px" }}>
           <Card style={{ width: "18rem", boxShadow: "6px 8px 12px #805416" }}>
             <ListGroup className="list-group-flush">
               <ListGroupItem
@@ -133,7 +117,7 @@ const IndexPage = () => (
               </ListGroupItem>
             </ListGroup>
 
-            <Card.Img variant="top" src={effsaa} style={{ height: "300px" }} />
+            <Card.Img variant="top" src={effsaa} style={{ height: "170px" }} />
             <Card.Body>
               <Card.Text>
                 Ethiopian Freight Forwarders and Shipping Agents Association
@@ -149,7 +133,7 @@ const IndexPage = () => (
             </Card.Body>
           </Card>
         </div>
-        <div className="col-md py-5" style={{ height: "550px" }}>
+        <div className="col-md " style={{ height: "350px" }}>
           <Card style={{ width: "18rem", boxShadow: "6px 8px 12px #805416" }}>
             <ListGroup
               className="list-group-flush"
@@ -165,7 +149,7 @@ const IndexPage = () => (
             <Card.Img
               variant="top"
               src={aaccsalogo}
-              style={{ height: "300px" }}
+              style={{ height: "170px" }}
             />
             <Card.Body>
               <Card.Text>
@@ -211,8 +195,8 @@ const IndexPage = () => (
                     <div className="media-body pl-4">
                       <h3 className="heading mb-3"> Customer Service</h3>
                       <p>
-                        As our mottoo we strive to make our customer have the
-                        best experince.
+                        As our motto we strive to make our customer have the
+                        best experience.
                       </p>
                     </div>
                   </div>
@@ -226,7 +210,7 @@ const IndexPage = () => (
                       <h3 className="heading mb-3">Networks</h3>
                       <p>
                         We have people in china and also in the ports who are
-                        constantly updating us on the progress of all materials.
+                        constantly updating us on the progress of our work.
                       </p>
                     </div>
                   </div>
@@ -239,8 +223,7 @@ const IndexPage = () => (
                     <div className="media-body pl-4">
                       <h3 className="heading mb-3">Reliable Equipment</h3>
                       <p>
-                        We have tracks,cranes that are on standby to serve our
-                        customers
+                        NEW TEXT HERE 
                       </p>
                     </div>
                   </div>
@@ -253,7 +236,7 @@ const IndexPage = () => (
                     <div className="media-body pl-4">
                       <h3 className="heading mb-3">Experience</h3>
                       <p>
-                        We have worked in big projects and were always on time
+                        We have worked in big projects and we are always on time
                         to deliver all the materials.
                       </p>
                     </div>
@@ -393,7 +376,7 @@ const IndexPage = () => (
             <Card.Title style={{ textAlign: "center" }}>
             Respect
             </Card.Title>
-            <Card.Text style={{ textAlign: "center",wordBreak: "break-all" }}>
+            <Card.Text style={{ textAlign: "center",wordBreak: "break-word" }}>
             We believes and executes that respecting the
                     society, our customers and employees are the basis for our
                     company sustainability. 
@@ -406,7 +389,7 @@ const IndexPage = () => (
             <Card.Title style={{ textAlign: "center" }}>
             Team working
             </Card.Title>
-            <Card.Text style={{ textAlign: "center",wordBreak: "break-all" }}>
+            <Card.Text style={{ textAlign: "center",wordBreak: "break-word" }}>
             we do our activities by participating our
                     customers, stakeholders and employees in a way that develop
                     a one team spirit and a culture of discussion.

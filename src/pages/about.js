@@ -47,7 +47,7 @@ export default function About() {
                 Origin Logistics PLC mainly engage in giving a quality logistics
                 services for both international & Local Companies. It has
                 customs clearing & Forwarding licenses which makes it able to
-                give a various form of logistic works.
+                give a various form of logistic service.
                 <br /> <br />
                 The main logistic services that our company is providing are
                 port clearing, customs clearing and transporting, warehousing,
@@ -110,63 +110,7 @@ export default function About() {
                   </p>
                 </Col>
               </Row>
-              <Row>
-                <Col >
-                  <div className="card-img pb-3">
-                    <span
-                      className="mbri-user mbr-iconfont pr-2"
-                      style={{ color: "#ffa931", fontSize: "4em" }}
-                    ></span>
-                    <h4 className="mbr-content-title mbr-bold mbr-fonts-style display-7">
-                      Customers
-                    </h4>
-                  </div>
-                  <p
-                    className="mbr-content-text mbr-fonts-style display-7"
-                    style={{ fontSize: "1.3rem" }}>
-                  Belayab Geepas Electronics Manufacturing PLC <br/>
-                  	Yongtai Meat food and Casing processing PLC<br/>
-                  	Lewis Construction PLC<br/>
-                  	Vita Hydro Agro Processing PLC  <br/>
-                  	Belayab Foods Production PLC <br/>
-                  	WU KE SONG Wood products Manufacturing PLC<br/>
-                  	 DX industries PLC<br/>
-                  	Jianxin  Zhang Crust and finished Leather production<br/>
-                  	Jianxin Zhang<br/>
-                  	Hudao Chen<br/>
-                  	Tanamru chemical industrial PLC
-                  
-                  </p>
-                </Col>
-                <Col >
-                  <div className="card-img pb-3">
-                    <span
-                      className="mbri-extension mbr-iconfont pr-2"
-                      style={{ color: "#ffa931", fontSize: "4em" }}
-                    ></span>
-                  </div>
-                  <h4
-                    className="mbr-content-title mbr-bold mbr-fonts-style display-7"
-                    style={{ fontSize: "1.3rem" }}
-                  >
-                    Sister company of
-                  </h4>
-                  <p className="mbr-content-text mbr-fonts-style display-7" style={{ fontSize: "1.3rem" }}>
-                    <ul className="mbr-content-text mbr-fonts-style display-7">
-                      <li>Belayab Moter PLC</li>
-                      <li>Belayab Cable Manufacturing PLC</li>
-                      <li>Belayab Foods plc (Pizza Hut)</li>
-                      <li>Belayab Gepas Electronics plc</li>
-                      <li>Lewis Construction PLC</li>
-                      <li>Lecon Construction PLC </li>
-                      <li>Vita Agro Processing PLC</li>
-                      <li>Golden Tulip Hotel</li>
-                      <li>Lewis Retail (Bambis supermarket)</li>
-                    </ul>
-                  </p>
-                </Col>
-              </Row>
-            </Col>
+  </Col>
           </Row>
         </Container>
       </section>

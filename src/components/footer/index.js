@@ -221,7 +221,7 @@ export const Footer = () => {
                         lineHeight: "24px",
                       }}
                     >
-                      Importing Equipments
+                      Importing Goods
                     </Link>
                   </li>
                   <li>
@@ -234,7 +234,7 @@ export const Footer = () => {
                         lineHeight: "24px",
                       }}
                     >
-                      Transportaion
+                      Transportation
                     </Link>
                   </li>
                   <li>

@@ -5,8 +5,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
-import re from "../images/re.jpg"
-import { Link } from "gatsby"
+import re from "../images/re.jpg" 
 export default function Transportation() {
 	return (
               <Layout>
@@ -66,8 +65,7 @@ export default function Transportation() {
               </Nav.Link>
               <Nav.Link href="/transportation/"
                 eventKey="link-2"
-                style={{
-                  color: "#000000",
+                style={{ 
                   fontSize: "1.2 em",
                   borderWidth: "1px",
                   borderColor: "#4c7ba917",
@@ -100,8 +98,7 @@ export default function Transportation() {
                   borderStyle: "groove",
                 }}
               >
-                Importation of industrial and construction machineries,
-                equipment and spare par
+               Importing goods
               </Nav.Link>
             </Nav>
           </Col>

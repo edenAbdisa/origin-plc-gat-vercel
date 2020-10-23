@@ -32,107 +32,51 @@ export default function Gallery() {
         
         <Card style={{ width: "18rem", alignItems: "center", border: "none",float:"left" }}>
           <Image variant="top" src={emp1} style={{boxShadow: "8px 4px 15px 3px #9a7746",height:"200px",width:"200px"}} roundedCircle />
-          <Card.Body>
-            <Card.Title style={{ textAlign: "center" }}>
-              Social responsibility
-            </Card.Title>
-          </Card.Body>
+          
         </Card>    
         <Card style={{ width: "18rem", alignItems: "center", border: "none",float:"left" }}>
           <Image variant="top" src={emp2} style={{boxShadow: "8px 4px 15px 3px #9a7746",height:"200px",width:"200px"}} roundedCircle />
-          <Card.Body style={{marginLeft:"30px"}}>
-            <Card.Title style={{ textAlign: "center" }}>
-            Customer Oriented
-            </Card.Title>
-          </Card.Body>
+          
         </Card>
         <Card style={{ width: "18rem", alignItems: "center", border: "none",float:"left" }}>
           <Image variant="top" src={emp3} style={{boxShadow: "8px 4px 15px 3px #9a7746",height:"200px",width:"200px"}} roundedCircle />
-          <Card.Body style={{marginLeft:"30px"}}>
-            <Card.Title style={{ textAlign: "center" }}>
-            Respect
-            </Card.Title>
-          </Card.Body>
+          
         </Card>
         <Card style={{ width: "18rem", alignItems: "center", border: "none",float:"left" }}>
           <Image variant="top" src={emp4} style={{boxShadow: "8px 4px 15px 3px #9a7746",height:"200px",width:"200px"}} roundedCircle />
-          <Card.Body style={{marginLeft:"30px"}}>
-            <Card.Title style={{ textAlign: "center" }}>
-            Team working
-            </Card.Title>
-          </Card.Body>
-        </Card>
-        <Card style={{ width: "18rem", alignItems: "center", border: "none",float:"left" }}>
-          <Image variant="top" src={emp4} style={{boxShadow: "8px 4px 15px 3px #9a7746",height:"200px",width:"200px"}} roundedCircle />
-          <Card.Body style={{marginLeft:"30px"}}>
-            <Card.Title style={{ textAlign: "center" }}>
-            Continuous improvement
-            </Card.Title>
-          </Card.Body>
-        </Card>
+          
+        </Card>     
         <Card style={{ width: "18rem", alignItems: "center", border: "none",float:"left" }}>
           <Image variant="top" src={emp5} style={{boxShadow: "8px 4px 15px 3px #9a7746",height:"200px",width:"200px"}} roundedCircle />
-          <Card.Body>
-            <Card.Title style={{ textAlign: "center" }}>
-              Social responsibility
-            </Card.Title>
-          </Card.Body>
+          
         </Card>    
         <Card style={{ width: "18rem", alignItems: "center", border: "none",float:"left" }}>
           <Image variant="top" src={emp6} style={{boxShadow: "8px 4px 15px 3px #9a7746",height:"200px",width:"200px"}} roundedCircle />
-          <Card.Body style={{marginLeft:"30px"}}>
-            <Card.Title style={{ textAlign: "center" }}>
-            Customer Oriented
-            </Card.Title>
-          </Card.Body>
+          
         </Card>
         <Card style={{ width: "18rem", alignItems: "center", border: "none",float:"left" }}>
           <Image variant="top" src={found1} style={{boxShadow: "8px 4px 15px 3px #9a7746",height:"200px",width:"200px"}} roundedCircle />
-          <Card.Body style={{marginLeft:"30px"}}>
-            <Card.Title style={{ textAlign: "center" }}>
-            Respect
-            </Card.Title>
-          </Card.Body>
+          
         </Card>
         <Card style={{ width: "18rem", alignItems: "center", border: "none",float:"left" }}>
           <Image variant="top" src={front} style={{boxShadow: "8px 4px 15px 3px #9a7746",height:"200px",width:"200px"}} roundedCircle />
-          <Card.Body style={{marginLeft:"30px"}}>
-            <Card.Title style={{ textAlign: "center" }}>
-            Team working
-            </Card.Title>
-          </Card.Body>
+          
         </Card>
         <Card style={{ width: "18rem", alignItems: "center", border: "none",float:"left" }}>
           <Image variant="top" src={silvercylinder} style={{boxShadow: "8px 4px 15px 3px #9a7746",height:"200px",width:"200px"}} roundedCircle />
-          <Card.Body style={{marginLeft:"30px"}}>
-            <Card.Title style={{ textAlign: "center" }}>
-            Continuous improvement
-            </Card.Title>
-          </Card.Body>
+          
         </Card>
         <Card style={{ width: "18rem", alignItems: "center", border: "none",float:"left" }}>
           <Image variant="top" src={longblue} style={{boxShadow: "8px 4px 15px 3px #9a7746",height:"200px",width:"200px"}} roundedCircle />
-          <Card.Body style={{marginLeft:"30px"}}>
-            <Card.Title style={{ textAlign: "center" }}>
-            Continuous improvement
-            </Card.Title>
-          </Card.Body>
+          
         </Card>
         <Card style={{ width: "18rem", alignItems: "center", border: "none",float:"left" }}>
           <Image variant="top" src={loaded} style={{boxShadow: "8px 4px 15px 3px #9a7746",height:"200px",width:"200px"}} roundedCircle />
-          <Card.Body style={{marginLeft:"30px"}}>
-            <Card.Title style={{ textAlign: "center" }}>
-            Continuous improvement
-            </Card.Title>
-          </Card.Body>
+          
         </Card>
         <Card style={{ width: "18rem", alignItems: "center", border: "none",float:"left" }}>
           <Image variant="top" src={whitetrack} style={{boxShadow: "8px 4px 15px 3px #9a7746",height:"200px",width:"200px"}} roundedCircle />
-          <Card.Body style={{marginLeft:"30px"}}>
-            <Card.Title style={{ textAlign: "center" }}>
-            Continuous improvement
-            </Card.Title>
-          </Card.Body>
+          
         </Card>
       </div>
     </section>
