@@ -8,9 +8,9 @@ import mail from "../../assets/icon/mail-outline.svg"
 import { Link } from "gatsby"
 export const Footer = () => {
   return (
-    <FooterContainer>
-      <footer className="ftco-footer">
-        <div className="container mb-5 pb-4">
+    <FooterContainer style={{paddingTop:"2em"}}> 
+      <footer className="ftco-footer" >
+        <div className="container pb-4">
           <div className="row">
             <div className="col-lg col-md-6">
               <div className="ftco-footer-widget">
@@ -349,7 +349,7 @@ export const Footer = () => {
                             }}
                           />
                         </span>
-                        Addis Ababa, Akaki Kality  <br /> subcity, Saris Kadisco,  <br />Trans Ethiopia Building 7th floor
+                        Addis Ababa, Nefas Silk <br /> subcity, Saris Kadisco,  <br />Trans Ethiopia Building 7th floor
                         
                       </a>
                     </li>
@@ -373,6 +373,15 @@ export const Footer = () => {
           </div>
         </div>
       </footer>
+      <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+
+<script
+  src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+  crossorigin></script>
+
+<script
+  src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+  crossorigin></script>
     </FooterContainer>
   )
 }

@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
-import re from "../images/re.jpg" 
+import re from "../images/re.jpg"
 export default function CustomClearing() {
   return (
     <Layout>
@@ -17,6 +17,7 @@ export default function CustomClearing() {
           paddingLeft: "10px",
           paddingTop: "50px",
           maxWidth: "fitContent",
+          marginBottom:"50px"
         }}
       >
         <Row>
@@ -52,13 +53,15 @@ export default function CustomClearing() {
               >
                 Port clearing
               </Nav.Link>
-              <Nav.Link href="/customClearing/"
+              <Nav.Link
+                href="/customClearing/"
                 eventKey="link-1"
                 style={{ backgroundColor: "#ffa931", color: "#ffffff" }}
               >
                 Custom Clearing
               </Nav.Link>
-              <Nav.Link href="/transportation/"
+              <Nav.Link
+                href="/transportation/"
                 eventKey="link-2"
                 style={{
                   color: "#000000",
@@ -70,7 +73,8 @@ export default function CustomClearing() {
               >
                 Transportation
               </Nav.Link>
-              <Nav.Link href="/consultationAndFacilitation/"
+              <Nav.Link
+                href="/consultationAndFacilitation/"
                 eventKey="link-2"
                 style={{
                   color: "#000000",
@@ -82,7 +86,8 @@ export default function CustomClearing() {
               >
                 Consultation and facilitation
               </Nav.Link>
-              <Nav.Link href="/importingEquipments/"
+              <Nav.Link
+                href="/importingEquipments/"
                 eventKey="link-2"
                 style={{
                   color: "#000000",

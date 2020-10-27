@@ -1,11 +1,6 @@
 import '../../styles/global.css'
 import styled from 'styled-components' 
-import "../../assets/css/animate.css"
-import "../../assets/css/bootstrap-datepicker.css";
-import "../../assets/css/bootstrap.min.css";
-import "../../assets/css/flaticon.css";
-import "../../assets/css/jquery.timepicker.css";
-import "../../assets/css/magnific-popup.css";
+
 export const LayoutContainer = styled.div`
     display: grid;
     /* background-color: var(--accent-color); */

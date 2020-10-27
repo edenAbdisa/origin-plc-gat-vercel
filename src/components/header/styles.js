@@ -1,11 +1,5 @@
 import styled from 'styled-components'
-import "../../assets/css/animate.css"
-import "../../assets/css/animate.css";
-import "../../assets/css/bootstrap-datepicker.css";
-import "../../assets/css/bootstrap.min.css";
-import "../../assets/css/flaticon.css";
-import "../../assets/css/jquery.timepicker.css";
-import "../../assets/css/magnific-popup.css";
+
 /*import "../../assets/js/jquery.min.js"
 import "../../assets/js/jquery-migrate-3.0.1.min.js"
 //import "../../assets/js/popper.min.js"
@@ -30,6 +24,13 @@ export const HeaderContainer = styled.div`
         color: black; 
     }
     .cc { color: #FFFFFF;
+    }
+    .dropdown-menu{
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: all 0.6s ease-in;
+    }
+    .drop a:active{
+        background-color: #ffffff00 !important;
     }
 
 `

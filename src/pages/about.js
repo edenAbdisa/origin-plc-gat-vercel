@@ -4,8 +4,6 @@ import SEO from "../components/seo"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import "../assets/icon/mobirise-icons.css"
-
 export default function About() {
   return (
     <Layout>
@@ -19,25 +17,28 @@ export default function About() {
           style={{
             position: "relative",
             paddingRight: "5px",
-            paddingLeft: "5px", 
+            paddingLeft: "5px",
             paddingTop: "50px",
+            marginBottom:"40px",
             maxWidth: "fitContent",
           }}
         >
-          <Row style={{width:"100%"}}>
-            <Col xs={8} md={6}>
-              <h2 className="align-left mbr-fonts-style ">
+<Row>
+<h2 className="align-left mbr-fonts-style " style={{
+    paddingRight: "7px",borderRightStyle:"inset", borderRightColor:"#ffab37",borderRightWidth:"3px"}}>
                 ORIGIN LOGISTICS PLC
-              </h2>{" "}
+              </h2>
+</Row>
+          <Row >
+          
               <p
                 className=" align-left  "
-                style={{ fontSize: "1.3rem", textAlign: "justify" }}
-              >
+                style={{ fontSize: "1.1rem" }}
+              > <br/><br/>
                 Origin Logistics PLC established on May 2016 G.C by Ethiopian
                 Shareholders. The main shareholder own more than 10 companies in
                 Ethiopia & in different countries. These companies are engaged
-                in different sectors by having a huge capitals. <br />
-                <br />
+                in different sectors by having a huge capitals. 
                 Among the companies Belayab Moter PLC, Belayab Cable
                 Manufacturing PLC, Belayab Geepass electronics manufacturing
                 PLC, Belayab foods PLC, Lewis Construction PLC, Lecon
@@ -48,23 +49,26 @@ export default function About() {
                 services for both international & Local Companies. It has
                 customs clearing & Forwarding licenses which makes it able to
                 give a various form of logistic service.
-                <br /> <br />
+                
                 The main logistic services that our company is providing are
-                port clearing, customs clearing and transporting, warehousing,
-                cargo handling equipment, Distribution, Consultation and
-                facilitation.
-                <br />
-                <br /> The company has also an importing license of industrial
+                <ul>
+               <li> Port clearing</li><li> Customs clearing and transporting </li><li> Warehousing
+               </li><li> Cargo handling equipment</li><li> Distribution</li><li> Consultation and
+                facilitation</li>
+                </ul>
+                 
+                 The company has also an importing license of industrial
                 and construction machineries, equipment and spare parts. This
                 makes the company ideal to provide a full package of door to
                 door services for individuals and companies which require buying
                 industrial and construction machineries, equipment and spare
                 parts.
-              </p>
-            </Col>
-            <Col xs={6} md={6}>
+                <br/><br/>
+              </p> 
+          </Row>
+           
               <Row>
-                <Col >
+                <Col style={{padding:"0px",marginRight: "50px"}}>
                   <div className="card-img pb-3">
                     <span
                       className="mbri-flag mbr-iconfont pr-2"
@@ -77,19 +81,17 @@ export default function About() {
 
                   <p
                     className="mbr-content-text mbr-fonts-style display-7"
-                    style={{ fontSize: "1.3rem" }}
+                    style={{ fontSize: "1.1rem", textAlign: "left",borderRightStyle:"inset", borderRightColor:"#ffab37",borderRightWidth:"3px" }}
                   >
-                    To be Origin of society benefit.
-                    <br />
-                    <br />
+                    To be Origin of society benefit.<br/>
                     By supplying a standard quality and customer oriented Goods
                     and services for local and foreign companies having high
                     performer employees and implementing modern system and
                     technologies, contribute for the success of our customers
                     and society at large.
                   </p>
-                </Col>
-                <Col >
+                </Col> 
+                <Col style={{padding:"0px"}}>
                   <div className="card-img pb-3">
                     <span
                       className="mbri-globe-2 mbr-iconfont pr-2"
@@ -102,16 +104,18 @@ export default function About() {
 
                   <p
                     className="mbr-content-text mbr-fonts-style "
-                    style={{ fontSize: "1.3rem" }}
+                    style={{ fontSize: "1.1rem", textAlign: "left" }}
                   >
-                    Upgrading the quality and types of logistics services to get
-                    customers satisfaction and become a chosen logistic service
-                    provider in Ethiopia.
+                    Get customers satisfaction and become a chosen logistic service provider in Ethiopia by
+                    <ul>
+                      <li>Adding LCL and importing services from two additional ports.</li>
+                      <li>Upgrading our capacity to service more customers and big volume of cargoes.</li>
+                      <li>Reduce service time and avoidable costs of logistic.</li>
+                    </ul>
                   </p>
                 </Col>
               </Row>
-  </Col>
-          </Row>
+            
         </Container>
       </section>
     </Layout>

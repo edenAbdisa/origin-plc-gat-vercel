@@ -3,36 +3,30 @@ import { HeaderContainer } from "./styles"
 import "./styles"
 import location from "../../assets/icon/location-outline.svg"
 import NavDropdown from "react-bootstrap/NavDropdown"
-import "../../assets/css/animate.css"
-import "../../assets/css/animate.css"
-import "../../assets/css/bootstrap-datepicker.css"
-import "../../assets/css/bootstrap.min.css"
-import "../../assets/css/flaticon.css"
-import "../../assets/css/jquery.timepicker.css"
-import "../../assets/css/magnific-popup.css"
-import logo2 from "../../images/logo2.jpg"
+
+import logo2crop from "../../images/logo2crop.jpg"
 import call from "../../assets/icon/call-outline.svg"
 import { Link } from "gatsby"
 import mail from "../../assets/icon/mail-outline.svg"
 const Header = () => {
   return (
-    <HeaderContainer>
+    <HeaderContainer style={{paddingTop:"0px"}}>
       <div
-        className="py-3"
-        style={{ height: "5.8rem", padding: "1rem !important" }}
+        style={{paddingBottom: "0rem !important" }}
       >
-        <div className="container">
+        <div className="container" >
           <div className="row d-flex align-items-start align-items-top px-3 px-md-0">
             <div className="col-md-4 d-flex mb-2 mb-md-0">
-              <a className="navbar-brand d-flex align-items-center" href="/">
-                <img src={logo2} style={{ height: "4.3rem" }} />
+              <a className="navbar-brand d-flex" href="/" style={{paddingTop:"0px"}}>
+                <img src={logo2crop} style={{ height: "7rem",marginRight:"1rem",paddingTop:"1rem"}} />
                 <span
                   style={{
-                    fontSize: "24px",
+                    paddingTop: "3.6rem",
+                    fontSize: "18px",
                     fontWeight: "600",
                     lineHeight: "1",
                     whiteSpace: "nowrap",
-                    color:"#1eb1e8b8"
+                    color:"#2598c2"
                   }}
                 >
                   Origin Logistics PLC <br />
@@ -42,16 +36,16 @@ const Header = () => {
                 </span>
               </a>
             </div>
-            <div className="col-md-3 d-flex topper mb-md-0 mb-2 align-items-top">
-              <div className="icon d-flex justify-content-center align-items-center">
-                <span className="fa fa-map">
+            <div className="col-md-3 d-flex topper mb-md-0 mb-2 align-items-top" style={{  paddingTop: "2rem"}}>
+              <div className="icon d-flex justify-content-center align-items-center" >
+                <span className="fa fa-paper-plane">
                   <img
                     src={call}
                     style={{ height: "40px", width: "40px", color: "#ffa931" }}
                   />
                 </span>
               </div>
-              <div className="pr-md-4 pl-md-3 pl-3 text">
+              <div className="textpl-3 pl-md-3">
                 <p
                   className="hr"
                   style={{
@@ -77,7 +71,7 @@ const Header = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-3 d-flex topper mb-md-0 align-items-top">
+            <div className="col-md-3 d-flex topper mb-md-0 align-items-top" style={{  paddingTop: "2rem"}}>
               <div className="icon d-flex justify-content-center align-items-center">
                 <span className="fa fa-paper-plane">
                   <img
@@ -86,7 +80,7 @@ const Header = () => {
                   />
                 </span>
               </div>
-              <div className="text pl-3 pl-md-3">
+              <div className=" text pl-3 pl-md-3">
                 <p
                   className="hr"
                   style={{ fontSize: "13px", fontWeight: "600", margin: "0em" }}
@@ -100,6 +94,7 @@ const Header = () => {
                     fontWeight: "300",
                     lineHeight: "1.8",
                     color: "#999999",
+                    marginBottom:"0px"
                   }}
                 >
                   Trans Tower 7th floor Saris infront of Nifas silk paint
@@ -107,7 +102,7 @@ const Header = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-2 d-flex topper mb-md-0 align-items-top">
+            <div className="col-md-2 d-flex topper mb-md-0 align-items-top" style={{  paddingTop: "2rem"}}>
               <div className="icon d-flex justify-content-center align-items-center">
                 <span className="fa fa-paper-plane">
                   <img
@@ -132,7 +127,7 @@ const Header = () => {
                     color: "#999999",
                   }}
                 >
-                    gm@originlogisticsplc.com
+                    gm@originlogisticsplc.com  
                 </p>
               </div>
             </div>
@@ -181,7 +176,7 @@ const Header = () => {
                   About
                 </Link>
               </li>
-              <li className="nav-item" style={{color:"#ffffff"}}>
+              <li className="nav-item drop" style={{color:"#ffffff"}}>
                 <NavDropdown title={
         <span style={{color:"#ffffff"}}>Service</span>
     } >
