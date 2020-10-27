@@ -20,6 +20,7 @@ import respect from "../images/respect.png"
 import teamworking from "../images/teamworking.png"
 import Image from "react-bootstrap/Image"
 import Card from "react-bootstrap/Card"
+import { mainModule } from "process"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -148,7 +149,7 @@ const IndexPage = () => (
       className="ftco-section ftco-no-pt ftco-no-pb ftco-services-2"
       style={{
         backgroundColor: "#ffa931",      
-        paddingLeft: "50px",
+        paddingLeft: "190px",
         boxShadow: "6px 8px 12px #805416",
       }}
     >
@@ -231,14 +232,12 @@ const IndexPage = () => (
             <div
               className="appointment-wrap align-items-center"
               style={{ height: "100%" }}
-            >
-              <div className="overlay"></div>
-              <form 
+            > 
+          
+          <form 
                 className="appointment-form ftco-animate"
                 name="EmailForm"
-                method="POST"
-                enctype="multipart/form-data"
-                action="mailto:eden.abdisa@aiesec.net"
+                method="POST" 
                 style={{ paddingTop: "3rem" }}
               >
                 <h3 style={{ color: "white" }}>Contact Us</h3>
@@ -248,15 +247,15 @@ const IndexPage = () => (
                       type="text"
                       name="firstname"
                       className="form-control"
-                      placeholder="First Name"
+                      placeholder="Name"
                     />
                   </div>
                   <div className="form-group">
                     <input
-                      type="text"
+                      type="email"
                       name="lastname"
                       className="form-control"
-                      placeholder="Last Name"
+                      placeholder="email"
                     />
                   </div>
                   <div className="form-group">
@@ -309,7 +308,7 @@ const IndexPage = () => (
                       }}
                       type="submit"
                       value="Send "
-                      className="btn btn-primary form-control"
+                      className="btn btn-primary form-control" 
                     />
                   </div></div>
               </form>
@@ -471,5 +470,6 @@ const IndexPage = () => (
     </section>
   </Layout>
 )
-
+ 
+ 
 export default IndexPage
