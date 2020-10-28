@@ -7,7 +7,7 @@ const Gallery=({data}) =>(
   
     <Layout>
       <SEO title="Gallery" />
-      <Carousel interval="2000" >
+      <Carousel interval="2000"  style={{width:"inherit"}}>
       {data.allFile.edges.map(edge => {
         return (          
         <Carousel.Item>

@@ -1,4 +1,5 @@
 import React from "react"
+import { useForm } from '@formcarry/react'
 import effsaa from "../images/effsaa.jpg"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
@@ -20,8 +21,39 @@ import respect from "../images/respect.png"
 import teamworking from "../images/teamworking.png"
 import Image from "react-bootstrap/Image"
 import Card from "react-bootstrap/Card"
-import { mainModule } from "process"
-const IndexPage = () => (
+import axios from "axios"; 
+class IndexPage extends React.Component  {
+  constructor(props){
+    super(props);
+    this.state = {name: "", phone: "", email: "", message: "",success:""};
+  }
+ 
+  handleFields = e => this.setState({ [e.target.name]: e.target.value });
+  handleForm = e => {
+    axios.post(
+        "https://formcarry.com/s/rXL0U2wVJH", 
+        this.state, 
+        {headers: {"Accept": "application/json"}}
+      )
+      .then(function (response) {
+        
+        // access response.data in order to check formcarry response
+        if(response.data.success){
+          e.success="Thank you for contacting us"
+        } else {
+          // handle error
+          e.success="Form isnt submitted check your network"
+        }
+ 
+      })
+      .catch(function (error) {
+        e.success="Error when submitting the form."
+      });
+    
+    e.preventDefault();
+  };
+  render() {
+    return (
   <Layout>
     <SEO title="Home" />
     <section
@@ -67,11 +99,11 @@ const IndexPage = () => (
         </Carousel.Item>
       </Carousel>
     </section>
-    <section className="ftco-section ftco-no-pt ftco-no-pb ftco-services-2">
+    <section >
       <div
-        className="row d-flex"
-        style={{ padding: "50px", paddingRight: "0px", paddingLeft: "150px" }}      >
-        <div className="col-md " style={{ height: "350px" }}>
+        className="row"
+        style={{ paddingTop: "50px",  margin: "auto"  }}      >
+        <div   style={{ height: "350px",margin: "auto"  }}>
           <Card style={{ width: "18rem", boxShadow: "6px 8px 12px #805416" }}>
             <ListGroup className="list-group-flush">
               <ListGroupItem
@@ -93,7 +125,7 @@ const IndexPage = () => (
             </Card.Body>
           </Card>
         </div>
-        <div className="col-md " style={{ height: "350px" }}>
+        <div   style={{ height: "350px",margin: "auto"  }}>
           <Card style={{ width: "18rem", boxShadow: "6px 8px 12px #805416" }}>
             <ListGroup className="list-group-flush">
               <ListGroupItem
@@ -115,7 +147,7 @@ const IndexPage = () => (
             </Card.Body>
           </Card>
         </div>
-        <div className="col-md " style={{ height: "350px" }}>
+        <div  style={{ height: "350px",margin: "auto"  }}>
           <Card style={{ width: "18rem", boxShadow: "6px 8px 12px #805416" }}>
             <ListGroup
               className="list-group-flush"
@@ -149,11 +181,11 @@ const IndexPage = () => (
       className="ftco-section ftco-no-pt ftco-no-pb ftco-services-2"
       style={{
         backgroundColor: "#ffa931",      
-        paddingLeft: "190px",
+        
         boxShadow: "6px 8px 12px #805416",
       }}
     >
-      <div className="container" style={{ margin: "0px" }}>
+      <div className="container" style={{ margin: "auto" }}>
         <div className="row d-flex">
           <div className="col-md-7">
             <div className="py-lg-3">
@@ -234,7 +266,8 @@ const IndexPage = () => (
               style={{ height: "100%" }}
             > 
           
-          <form 
+        
+          <form   onSubmit={this.handleForm}
                 className="appointment-form ftco-animate"
                 name="EmailForm"
                 method="POST" 
@@ -248,14 +281,16 @@ const IndexPage = () => (
                       name="firstname"
                       className="form-control"
                       placeholder="Name"
+                      onChange={this.handleFields}
                     />
                   </div>
                   <div className="form-group">
                     <input
                       type="email"
-                      name="lastname"
+                      name="email"
                       className="form-control"
                       placeholder="email"
+                      onChange={this.handleFields}
                     />
                   </div>
                   <div className="form-group">
@@ -264,6 +299,7 @@ const IndexPage = () => (
                       name="phone"
                       className="form-control"
                       placeholder="Phone"
+                      onChange={this.handleFields}
                     />
                   </div>
                 </div>
@@ -289,12 +325,13 @@ const IndexPage = () => (
                 <div className="">
                   <div className="form-group">
                     <textarea
-                      name="message"
-                      id=""
+                      htmlFor="message"
+                      id="message"
                       cols="30"
                       rows="4"
                       className="form-control"
                       placeholder="Message"
+                      onChange={this.handleFields}
                     ></textarea>
                   </div>
                   
@@ -310,7 +347,9 @@ const IndexPage = () => (
                       value="Send "
                       className="btn btn-primary form-control" 
                     />
-                  </div></div>
+                  </div>
+                    
+                </div>
               </form>
             </div>
           </div>
@@ -330,6 +369,7 @@ const IndexPage = () => (
           wordBreak: "break-word",
           flexWrap: "nowrap",
           marginTop: "40px",
+          margin:"auto",
           paddingLeft: "24px",
         }}
       >
@@ -468,8 +508,8 @@ const IndexPage = () => (
         </Card>
       </div>
     </section>
-  </Layout>
-)
+  </Layout>)}
+}
  
  
 export default IndexPage

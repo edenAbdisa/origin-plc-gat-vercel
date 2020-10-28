@@ -20,8 +20,8 @@ export default function Transportation() {
           marginBottom:"50px"
         }}
       >
-        <Row>
-          <Col xs={8} md={4}>
+        <Row style={{margin:"auto"}}>
+          <Col xs={8} md={4} style={{margin:"auto"}}>
             <p
               style={{
                 backgroundColor: "#4e4a3540",
@@ -108,7 +108,7 @@ export default function Transportation() {
               </Nav.Link>
             </Nav>
           </Col>
-          <Col xs={8} md={8}>
+          <Col xs={8} md={8} style={{margin:"auto"}}>
             <img className="d-block w-100" src={re} alt="Origin Details" />
             <p style={{ paddingTop: "20px" }}>
               We do transport work for factories, traders and big Ethiopian

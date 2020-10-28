@@ -8,19 +8,16 @@ export default function Contact() {
   return (
     <Layout>
       <SEO title="Contact" />
-      <Container
-        style={{
+      
+        <Row style={{
           position: "relative",
-          paddingRight: "10px",
-          paddingLeft: "10px",
+          paddingRight: "10%",
+          paddingLeft: "10%",
           paddingTop: "50px",
           paddingBottom: "50px",
-          marginBottom: "10px",
-          maxWidth: "fitContent",
-        }}
-      >
-        <Row>
-          <Col xs={8} md={6}>
+          marginBottom: "10px"
+        }}>
+          <Col xs={8} md={6} >
             <iframe
               frameborder="0"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.1284057778885!2d38.761168414733966!3d8.960313993568521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b84761963a8a9%3A0x7423e220f797f65c!2sTrans%20Ethiopia%20Tower!5e0!3m2!1sen!2set!4v1583053348360!5m2!1sen!2set"
@@ -33,13 +30,12 @@ export default function Contact() {
               }}
             ></iframe>
           </Col>
-          <Col
-            style={{
-              maxWidth: "100%",
+          <Col xs={8} md={6}
+            style={{ 
               borderWidth: "1.5px",
               borderColor: "#4c7ba917",
               borderStyle: "groove",
-              paddingTop: "0px",
+              paddingTop: "0px" 
             }}
           >
             <div className="appointment-wrap  align-items-center">
@@ -51,7 +47,7 @@ export default function Contact() {
                 enctype="multipart/form-data"
                 action="mailto:eden.abdisa@aiesec.net"
               >
-                <h5 className="pb-3 align-left mbr-fonts-style display-4">
+                <h5 className="pb-3 align-left mbr-fonts-style display-4" style={{margin:"auto"}}>
                   Contact Us
                 </h5>
                 <div className="">
@@ -122,8 +118,7 @@ export default function Contact() {
               </form>
             </div>
           </Col>
-        </Row>
-      </Container>
+        </Row> 
     </Layout>
   )
 }

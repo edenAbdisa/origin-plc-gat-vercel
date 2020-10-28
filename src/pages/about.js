@@ -20,16 +20,16 @@ export default function About() {
             paddingLeft: "5px",
             paddingTop: "50px",
             marginBottom:"40px",
-            maxWidth: "fitContent",
+            margin: "auto",
           }}
         >
-<Row>
-<h2 className="align-left mbr-fonts-style " style={{
+<Row style={{margin:"auto"}}>
+<h2 className="align-left mbr-fonts-style" style={{
     paddingRight: "7px",borderRightStyle:"inset", borderRightColor:"#ffab37",borderRightWidth:"3px"}}>
                 ORIGIN LOGISTICS PLC
               </h2>
 </Row>
-          <Row >
+          <Row style={{margin:"auto"}}>
           
               <p
                 className=" align-left  "
@@ -67,7 +67,7 @@ export default function About() {
               </p> 
           </Row>
            
-              <Row>
+              <Row style={{margin:"auto"}}>
                 <Col style={{padding:"0px",marginRight: "50px"}}>
                   <div className="card-img pb-3">
                     <span

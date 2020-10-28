@@ -3,7 +3,8 @@ import { HeaderContainer } from "./styles"
 import "./styles"
 import location from "../../assets/icon/location-outline.svg"
 import NavDropdown from "react-bootstrap/NavDropdown"
-
+import Navbar from "react-bootstrap/Navbar"
+import Nav from "react-bootstrap/Nav"
 import logo2crop from "../../images/logo2crop.jpg"
 import call from "../../assets/icon/call-outline.svg"
 import { Link } from "gatsby"
@@ -12,12 +13,12 @@ const Header = () => {
   return (
     <HeaderContainer style={{paddingTop:"0px"}}>
       <div
-        style={{paddingBottom: "0rem !important" }}
+        style={{paddingBottom: "0rem !important",margin:"auto" }}
       >
         <div className="container" >
           <div className="row d-flex align-items-start align-items-top px-3 px-md-0">
             <div className="col-md-4 d-flex mb-2 mb-md-0">
-              <a className="navbar-brand d-flex" href="/" style={{paddingTop:"0px"}}>
+              <a className="navbar-brand d-flex" href="/" style={{paddingTop:"0px",wordBreak: "break-word"}}>
                 <img src={logo2crop} style={{ height: "7rem",marginRight:"1rem",paddingTop:"1rem"}} />
                 <span
                   style={{
@@ -26,7 +27,8 @@ const Header = () => {
                     fontWeight: "600",
                     lineHeight: "1",
                     whiteSpace: "nowrap",
-                    color:"#2598c2"
+                    color:"#2598c2",
+                    wordBreak: "break-word"
                   }}
                 >
                   Origin Logistics PLC <br />
@@ -134,27 +136,10 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <nav
-        style={{ backgroundColor: "#042e4f" }}
-        className="navbar navbar-expand-lg navbar-dark ftco-navbar-light navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm"
-        id="ftco-navbar"
-      >
-        <div className="container d-flex align-items-center">
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#ftco-nav"
-            aria-controls="ftco-nav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="fa fa-bars"></span> Menu
-          </button>
-          <div
-            className="collapse navbar-collapse"
-            id="ftco-nav"
-            style={{
+    
+           <Navbar expand="lg"  style={{ backgroundColor: "#042e4f" }} >
+           <Navbar.Toggle aria-controls="basic-navbar-nav" style={{backgroundColor:"white"}}/>
+           <Navbar.Collapse id="basic-navbar-nav" style={{
               fontSize: "14px",
               fontWeight: "500",
               textTransform: "uppercase",
@@ -163,8 +148,9 @@ const Header = () => {
               paddingBottom: "1rem",
               paddingRight: "25px",
               paddingLeft: "25px",
-            }}
-          >
+            }}>
+           <Nav   style={{margin:"auto"}}>
+
             <ul className="navbar-nav m-auto">
               <li className="nav-item active">
                 <Link to="/" className="nav-link" style={{color:"#ffffff"}}>
@@ -214,9 +200,10 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
-          </div>
-        </div>
-      </nav>
+     
+          </Nav>
+           </Navbar.Collapse>
+      </Navbar>
     </HeaderContainer>
   )
 }
