@@ -12,11 +12,9 @@ import mail from "../../assets/icon/mail-outline.svg"
 const Header = () => {
   return (
     <HeaderContainer style={{paddingTop:"0px"}}>
-      <div
-        style={{paddingBottom: "0rem !important",margin:"auto" }}
-      >
-        <div className="container" >
-          <div className="row d-flex align-items-start align-items-top px-3 px-md-0">
+      
+        <div className="container" style={{ margin: "auto" }}>
+          <div className="row d-flex ">
             <div className="col-md-4 d-flex mb-2 mb-md-0">
               <a className="navbar-brand d-flex" href="/" style={{paddingTop:"0px",wordBreak: "break-word"}}>
                 <img src={logo2crop} style={{ height: "7rem",marginRight:"1rem",paddingTop:"1rem"}} />
@@ -135,10 +133,10 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </div>
+      
     
            <Navbar expand="lg"  style={{ backgroundColor: "#042e4f" }} >
-           <Navbar.Toggle aria-controls="basic-navbar-nav" style={{backgroundColor:"white"}}/>
+           <Navbar.Toggle aria-controls="basic-navbar-nav" style={{background:"#ffa93126"}}/>
            <Navbar.Collapse id="basic-navbar-nav" style={{
               fontSize: "14px",
               fontWeight: "500",

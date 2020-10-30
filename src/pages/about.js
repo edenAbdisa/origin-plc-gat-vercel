@@ -10,8 +10,7 @@ export default function About() {
       <SEO title="About" />
       <section
         className="hero-wrap js-fullheight"
-        style={{ position: "relative" }}
-        dataStellarBackgroundRatio="0.5"
+        style={{ position: "relative" }} 
       >
         <Container
           style={{

@@ -226,7 +226,7 @@ export const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/transportation/"
+                      to="/transportation/"
                       style={{
                         color: "#868482",
                         fontSize: "16px",
@@ -373,15 +373,15 @@ export const Footer = () => {
           </div>
         </div>
       </footer>
-      <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+      <script src="https://unpkg.com/react/umd/react.production.min.js" crossOrigin="true"></script>
 
 <script
   src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
-  crossorigin></script>
+  crossOrigin="true"></script>
 
 <script
   src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
-  crossorigin></script>
+  crossOrigin="true"></script>
     </FooterContainer>
   )
 }

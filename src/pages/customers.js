@@ -11,7 +11,7 @@ export default function Customers() {
       <section
         className="hero-wrap js-fullheight"
         style={{ position: "relative",marginBottom:"50px" }}
-        dataStellarBackgroundRatio="0.5"
+      
       >
         {" "}
         <Container

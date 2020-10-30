@@ -59,9 +59,9 @@ class IndexPage extends React.Component  {
     <section
       className="hero-wrap js-fullheight"
       style={{ position: "relative", boxShadow: "-1px 6px 19px 0px #1b415f" }}
-      dataStellarBackgroundRatio="0.5"
+      
     >
-      <Carousel interval="2000">
+      <Carousel interval={2000}>
         <Carousel.Item>
           <img className="d-block w-100" src={re} alt="Origin Details" />
         </Carousel.Item>
